@@ -1,0 +1,127 @@
+@import 'https://fonts.googleapis.com/css?family=Lora|EB+Garamond';
+
+html {
+  font-size: 85%;
+}
+
+body {
+  font-family: 'Lora', Georgia, serif;
+}
+
+a:link {
+  text-shadow: none;
+  text-decoration: none;
+}
+
+blockquote p {
+  background-color: #fefefe;
+  color: #808080;
+}
+
+p a:link, a:visited {
+  color: #3cb38f;
+  text-decoration: none;
+  text-shadow: none;
+}
+
+/* add little icons next to external links
+a[target="_blank"]::after {
+  content: url(data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAoAAAAKCAYAAACNMs+9AAAAQElEQVR42qXKwQkAIAxDUUdxtO6/RBQkQZvSi8I/pL4BoGw/XPkh4XigPmsUgh0626AjRsgxHTkUThsG2T/sIlzdTsp52kSS1wAAAABJRU5ErkJggg==);
+  margin: 0 3px 0 5px;
+}
+*/
+
+.dropdown-content a {
+    color: black;
+}
+
+.bibliography {
+  width: 55%;
+  padding-left: 22px ;
+  text-indent: -22px ;
+}
+
+
+/*************/
+/* headings */
+
+h1 {
+  color: #3cb38f;
+  border-bottom-style: none;
+  font-variant: small-caps;
+}
+
+h2 {
+  color: #3cb38f;
+  border-bottom-color: #3cb38f;
+  border-width: thin;
+  font-weight: normal;
+}
+
+h3 {
+  color: #3cb38f;
+  font-weight: normal;
+  font-style: italic;
+}
+
+
+/***************/
+/* header bar */
+
+/* Background pattern from Transparent Textures: https://www.transparenttextures.com/patterns/white-diamond-dark.png */
+ul.navbar {
+    background: url(images/white-diamond-dark.png), #1fcfa0;
+    padding-top: 0.45em;
+    text-shadow: 0px 0px 0.45em black;
+}
+
+.title {
+    font-size: 2.8rem;
+    font-weight: bold;
+}
+
+.author {
+    padding-top: 0.75em;
+}
+
+
+/***********************/
+/* dropdown menu bits */
+
+#active-page {
+    background-color: #3cb38f;
+}
+
+.dropdown-content a:hover {
+    background-color: rgb(60,179,143,0.4);
+}
+
+.toc-sections {
+    background-color: rgb(60,179,143,0.3);
+}
+
+
+/***************************/
+/* questions and solutions */
+
+.proposition, .question-begin, .question-end, .exercise, .question-body {
+  color: #6e84ce;
+}
+
+.solution, .solution-begin, .solution-end, .solution-body {
+    color: #ae9326;
+}
+
+.solution-body {
+    border-color: #ae9326;
+    border-style: solid;
+    border-width: thin;
+    width: 55%;
+    padding-left: 1em;
+    padding-right: 1em;
+    padding-top: 0.1em;
+    padding-bottom: 0.1em;
+}
+
+/* nice ruby color: #ae2661 */
+

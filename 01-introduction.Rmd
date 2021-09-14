@@ -1,0 +1,79 @@
+---
+title: "▽△ Triangle AI Book ▽△▽△▽"
+author: "Maithilee Kunda"
+date: "`r Sys.Date()`"
+knit: "bookdown::preview_chapter"
+site: "bookdown::bookdown_site"
+link-citations: no
+apple-touch-icon: "images/apple-touch-icon.png"
+apple-touch-icon-size: 120
+favicon: "images/favicon.ico"
+output:
+  msmbstyle::msmb_html_book:
+    highlight: tango
+    toc: TRUE
+    toc_depth: 1
+    split_by: chapter
+    split_bib: yes
+    margin_references: FALSE
+    css: triangleaibook.css
+    includes:
+      after_body: triangleaibook_footer.html
+bibliography: references.bib
+csl: apa-cv-mksort.csl
+---
+
+# Introduction {#about}
+
+
+## What is artificial intelligence?
+
+
+
+## Why triangles? {#triangle}
+
+
+
+
+
+## In this book: How terminology is used
+
+
+
+
+## In this book: Cognitive experiments
+
+
+
+## In this book: Exercises
+
+
+## AI & society
+
+
+
+
+## In this book: Your brain on AI {#sec:yourbrainonai}
+
+
+## No more simple happy nerds
+
+
+
+## Other resources {#sec:resources}
+
+To conclude this introduction, here are some general recommendations for other AI-related resources:
+
+- Melanie Mitchell's [*Artificial Intelligence: A Guide for Thinking Humans*](https://melaniemitchell.me/aibook/) gives a non-technical but content-rich overview of the broad field of AI, where it has been and where it is going, and descriptions of major approaches.
+
+- For more in-depth information about many of the AI topics covered in this book, [*Artificial Intelligence: A Modern Approach*](http://aima.cs.berkeley.edu/), by Stuart Russell and Peter Norvig (often called "AIMA" or "Russell & Norvig"), continues to be a standard in the field.  I still regularly use my old, dark-green, second-edition copy as a desk reference.  In addition to the coverage of technical topics, there is a really fabulous "Bibliographical and Historical Notes" section at the end of each chapter that lays out how the major developments in each area unfolded over time.
+
+- UC Berkeley graciously shares many materials from their undergraduate AI course [*CS 188*](https://inst.eecs.berkeley.edu/~cs188/sp21/), including lecture slides, homework problems, and the widely used [Pacman AI Projects](https://inst.eecs.berkeley.edu/~cs188/sp21/projects/).  Their treatment of topics tends to follow Russell & Norvig.
+
+- For more on machine learning, Tom Mitchell's [*Machine Learning*](http://www.cs.cmu.edu/~tom/mlbook.html) textbook gives an excellent and digestible overview of major approaches and also theoretical angles.  (Do not be put off by the 1997 publication date!  The fundamentals remain.)
+
+- For more on neural networks , I recommend Michael Nielsen's [*Neural Networks and Deep Learning*](http://neuralnetworksanddeeplearning.com/), which provides a superb introduction, and [*Deep Learning*](https://www.deeplearningbook.org/), by Ian Goodfellow, Yoshua Bengio, and Aaron Courville, for more advanced topics.
+
+- For more on reinforcement learning, Richard Sutton and Andrew Barto's [*Reinforcement Learning: An Introduction*](http://incompleteideas.net/book/the-book.html) is another standard in the field.
+
+
