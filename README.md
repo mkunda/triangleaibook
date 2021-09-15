@@ -9,3 +9,9 @@ This book is built using [bookdown](https://www.bookdown.org), along with the [m
 The Triangle AI Book uses the Contributor Covenant [Code of Conduct](https://www.contributor-covenant.org/version/2/1/code_of_conduct/).
 
 [![Contributor Covenant](https://img.shields.io/badge/Contributor%20Covenant-2.1-4baaaa.svg)](CODE_OF_CONDUCT.md)
+
+## Citing This Work
+
+Please cite as:
+
+Kunda, M. (2021). Triangle AI Book.  https://www.triangleaibook.org
