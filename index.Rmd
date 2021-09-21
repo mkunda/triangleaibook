@@ -78,7 +78,9 @@ This book is also inspired by the memory and teachings of [Patrick Winston](http
 
 ## Open source contributors {-}
 
-This book is being written as an open-source project.  Improvements and suggestions are welcomed via Github pull request: [View source](https://github.com/mkunda/triangleaibook).
+This book is being written as an open-source project.  Improvements and suggestions are welcomed via Github pull request:
+
+[View source](https://github.com/mkunda/triangleaibook).
 
 Contributors are expected to abide by the Contributor-Covenant [Code of Conduct](https://www.contributor-covenant.org/version/2/1/code_of_conduct/).
 
