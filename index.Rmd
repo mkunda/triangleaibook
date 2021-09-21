@@ -18,6 +18,7 @@ output:
     margin_references: FALSE
     css: triangleaibook.css
     includes:
+      in_header: triangleaibook_header.html
       after_body: triangleaibook_footer.html
 bibliography: references.bib
 csl: apa-cv-mksort.csl
