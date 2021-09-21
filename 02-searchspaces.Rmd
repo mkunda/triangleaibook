@@ -1,0 +1,257 @@
+---
+title: "▽△ Triangle AI Book ▽△▽△▽"
+author: "Maithilee Kunda"
+date: "`r Sys.Date()`"
+knit: "bookdown::preview_chapter"
+site: "bookdown::bookdown_site"
+link-citations: no
+apple-touch-icon: "images/apple-touch-icon.png"
+apple-touch-icon-size: 120
+favicon: "images/favicon.ico"
+output:
+  msmbstyle::msmb_html_book:
+    highlight: tango
+    toc: TRUE
+    toc_depth: 1
+    split_by: chapter
+    split_bib: yes
+    margin_references: FALSE
+    css: triangleaibook.css
+    includes:
+      in_header: triangleaibook_header.html
+      after_body: triangleaibook_footer.html
+bibliography: references.bib
+csl: apa-cv-mksort.csl
+---
+
+# Search Spaces
+
+<Under construction. Add chapter intro.>
+
+## Cognitive experiment: Fluency tasks
+
+*What you will need: A piece of paper, a writing utensil, and a timer.*
+
+There are an interesting category of tasks used in psychology research called *fluency* tasks, in which you have to come up with as many things of a certain type as you can within a fixed time limit.  Let us try some fluency tasks here.
+
+```{marginfigure}
+If you know more than one language, you should feel free to try these tasks in the language you are most comfortable in!  Or better yet, try doing the tasks in two different languages, though you will need to come up with your own targets for the second time around.  How does it feel to do these tasks in one language versus the other?
+```
+
+**Task 1. Letter fluency.**  You will have one minute to write down as many words as you can think of that start with the target letter given below.  (Multiple words that share the same stem but different endings, like "swim" and "swimming," do not count.)  Set your timer for one minute, and as soon as you start it, click to reveal the target letter.
+
+```{r, echo = FALSE} 
+msmbstyle::solution(text = "Target letter: F",
+                    header = "Click icon on the right to reveal target",
+                    toggle = TRUE)
+```
+
+**Task 2. Category fluency.**  You will have one minute to write down as many words as you can think of that fit into the target category given below.  Set your timer for one minute, and as soon as you start it, click to reveal the target category.
+
+```{r, echo = FALSE} 
+msmbstyle::solution(text = "Target category: Ocean animals",
+                    header = "Click icon on the right to reveal target",
+                    toggle = TRUE)
+```
+
+```{marginfigure}
+@guilford1951factor
+```
+
+**Task 3. Alternative uses test.**  You will have **three** minutes to write down as many uses as you can think of for the target object given below.  (For example, if the target object were a newspaper, you could: 1) read it; 2) roll it up as a flyswatter; 3) hold over your head as a temporary umbrella; etc.)  Set your timer for three minutes, and as soon as you start it, click to reveal the target object.
+
+```{r, echo = FALSE} 
+msmbstyle::solution(text = "Target object: A single brick",
+                    header = "Click icon on the right to reveal target",
+                    toggle = TRUE)
+```
+
+Now, take a look at each of the three lists you have come up with.  There are many ways to evaluate what you did.  For instance, how many items did you generate for each one?  Or, how *interesting* were the examples you came up with?  Are there examples that you are particularly proud of?
+
+All three of these tasks can be thought of as a form of *search*.  In the first two tasks, you were searching through your prior knowledge to find items that fit the specification.  The third task was a little different:  you were searching using your prior knowledge, but likely using that prior knowledge to come up with brand new ideas.
+
+## Problems as search spaces
+
+```{marginfigure}
+Definition: A **search space** is a set of items meeting some broad criteria, within which an intelligent agent can (somehow) seek a subset of items meeting some more specialized target criteria.
+```
+
+One of the core ideas that permeates virtually all of AI is the notion of a **search space**.  Many problems in intelligence can be described as a search space that consists of many possibilities, and the solution to the problem involves sifting through those possibilities in some fashion to find the right one (or the best one, or the best several, etc.).
+
+For example, finding your car keys in the morning is an example of a problem that involves a physical search space---the set of all items in your abode---and the target item is a unique physical object---your set of keys.
+
+The fluency tasks above can also be thought of in terms of search spaces, but these search spaces are not physical ones.  For Task 1, the search space is your prior knowledge of English words, and the target criterion is words starting with a particular letter.  
+
+For Task 2, the search space is your prior knowledge of animals, and the target criterion is animals that live in the ocean.  Or, the search space could be your prior knowledge of things in the ocean, and the target criterion could be animals.  There are often multiple ways to think about what the search space is for a given problem.
+
+Task 3 is a little different, because you were likely generating *new* items during your search.  Task 3 is a good illustration of how search spaces don't have to pre-exist in their entirety.  We can think of some abstract hypothetical search space (e.g., the space of all possible uses for an object), and then the search process is actually instantiating certain items in this hypothetical space as it goes (just as you were generating specific ideas during Task 3).
+
+```{r, echo = FALSE} 
+msmbstyle::question(header = "Exercise 2a",
+                    text = "Consider the problem of playing a game of chess.  How would you describe this problem in terms of one or more search spaces?")
+msmbstyle::solution(header = "Solution to Exercise 2a",
+                    text = "Under construction: Solution to be added",
+                    toggle = TRUE)
+```
+
+```{r, echo = FALSE} 
+msmbstyle::question(header = "Exercise 2b",
+                    text = "Consider the problem of walking down a sidewalk.  How would you describe this problem in terms of one or more search spaces?")
+msmbstyle::solution(header = "Solution to Exercise 2b",
+                    text = "Under construction: Solution to be added",
+                    toggle = TRUE)
+```
+
+```{r, echo = FALSE} 
+msmbstyle::question(header = "Exercise 2c",
+                    text = "Consider the problem of writing a poem.  How would you describe this problem in terms of one or more search spaces?")
+msmbstyle::solution(header = "Solution to Exercise 2c",
+                    text = "Under construction: Solution to be added",
+                    toggle = TRUE)
+```
+
+## Intelligent agents as search agents
+
+```{marginfigure}
+Definition: A **search agent** is an active entity or process that performs operations on a search space in order to find some target(s).
+```
+
+Given a problem described in terms of a search space, the next ingredient is having some **search agent** that can do the searching.  In the finding-your-keys example, your roomful of stuff is just a bunch of stuff until you (the search agent) start looking for your keys.  Then, your roomful of stuff becomes a search space.  Similarly, in the fluency tasks, the search agent is you.
+
+```{marginfigure}
+Definition: An **intelligent agent** is an active entity or process that performs operations of some kind in order to solve some problem.
+```
+
+In AI, we often use the more general term **intelligent agent** to refer to the active entity or process that is doing whatever it is doing to solve a problem.  Intelligent agents include humans, non-human animals, and computer programs.  
+
+A search agent can be thought of as a specific type of intelligent agent that solves problems via search.  As we will see throughout this book, virtually all intelligent agents modeled in AI are search agents of some kind, but we'll mostly stick to using the term "intelligent agents" from here on out.
+
+## Search spaces have structure
+
+```{marginfigure}
+Definition: The **structure of a search space** refers to the organization of the items within it.
+```
+
+In order to be able to do anything with a search space, an intelligent agent must have some kind of access to the items inside it.  How that access works depends on the **structure** of the search space.
+
+For example, when looking for your keys, there is a pre-existing physical organization of all of your stuff, by location and by room.  When you are searching, you can move from looking under the couch cushions to looking on your desk to peeking inside the fridge--- you are following some path through the search space that follows the contours of its physical layout.
+
+```{marginfigure}
+When looking for your keys, you do have access to a search space beyond the physical space you are in.  You also have a mental model, i.e., a stored representation of the space in your mind, in which you are not constrained by physical reality.  For instance, in your mental model, you can instantly jump from point A to point B without having to "walk" the points in between.
+```
+
+The structure of a search space can limit how an intelligent agent can search through it.  For example, when looking for your keys, you cannot be in two places at once, and you cannot go from point A to point B without physically walking through the points in between.
+
+However, the structure of a search space can also help an intelligent agent search through it.  For example, when looking for your keys, you might proceed methodically from one room to the next.  Now, the physical structure of the search space (i.e., your home being divided into separate rooms) helps you *decompose* the bigger search problem into several smaller search problems that you can solve independently.
+
+Search spaces can also have multiple kinds of structure layered onto them.  For example, when looking for your keys, one type of structure is the physical layout of the space.  Another type of structure might be the spatiotemporal structure of where you have been most recently.  For example, instead of searching room by room, you might search by retracing your steps since you last got home and threw your keys somewhere.
+
+```{marginfigure}
+*Structure is in the eyes of the beholder?*  Describing the structure of a search space often requires taking into account the capabilities or limitations of a particular agent.  For example, the physical layout of a room might seem like an absolute property, but that is only because we are three-dimensional agents that live inside three-dimensional physical bodies.  If a teleporting alien were looking for your keys, then the physical layout of your things would no longer be a defining characteristic of the structure of the search space.
+```
+
+This example about spatiotemporal structure raises an important but subtle point about the structure of search spaces.  Sometimes, the structure is an **intrinsic** property of the search space itself (like the pre-existing physical layout of an area).  Other times, the structure is **extrinsic** to the search space and comes instead from the intelligent agent  (like your memories of where you have recently been).
+
+Data structures in computer programming also provide an excellent illustration of the structure of spaces of things.  <Under construction: Finish this explanation.>
+
+<Under construction: Add about if there is no structure.>
+
+```{r, echo = FALSE} 
+msmbstyle::question(header = "Exercise 2d",
+                    text = "<Under construction: Add exercise.>")
+msmbstyle::solution(header = "Solution to Exercise 2d",
+                    text = "Under construction: Solution to be added",
+                    toggle = TRUE)
+```
+
+
+```{r, echo = FALSE} 
+msmbstyle::question(header = "Exercise 2e",
+                    text = "<Under construction: Add exercise.>")
+msmbstyle::solution(header = "Solution to Exercise 2e",
+                    text = "Under construction: Solution to be added",
+                    toggle = TRUE)
+```
+
+## Local search
+
+We've talked a bit vaguely til now about intelligent agents "searching through" or "traversing" search spaces.  What does this mean?
+
+If we take the analogy of a search space being like a physical area, then an intelligent agent is like a little creature that can run around to various locations in this area and perceive things at its current location.  In other words, the agent cannot (generally speaking) "see" the entire space at once.  Instead, just as you focus you attention on a sequence of particular locations while looking for your keys, the agent can only perceive information about one little piece of the search space at a time.
+
+In particular, the agent typically gets two different types of information about its current location in the search space:
+
+```{marginfigure}
+The **structure** that we talked about in the previous subsection is used by #2 on this list.
+```
+
+1. Is the search target at this location?
+
+2. Where can I go from here?
+
+Notice that if these two things are **all** that an agent knows about the search space that it is in, it can toddle around and do some searching!
+
+In fact, we could write a little recursive search loop for this:
+
+```{marginfigure}
+You may notice some obvious ways we could make this search loop work better.  For example, shouldn't the agent keep track of where it has been, so that it does not search the same location twice?  And what if the agent gets into a dead-end, but could have found the target if it had just made a different choice earlier?  All of these are very valid points that will be addressed in the next chapter, when we start discussing specific search algorithms.
+```
+
+``` 
+  function LocalSearchLoop(currentLocation, target) -> boolean
+      if (hasTarget(currentLocation, target))
+          return true;
+      options = getPossibleLocations(currentLocation);
+      if (options == null)
+          return false;
+      nextLocation = chooseOne(options);
+      return LocalSearchLoop(nextLocation, target);
+  end
+  
+  function DoLocalSearch(startingLocation, target) -> boolean
+      return LocalSearchLoop(startingLocation, target);
+  end
+```
+
+Notice that, in addition to getting these two pieces of information from the search space, the agent also needs:
+
+3. Some internal method for choosing which of the possible options it will go to next.
+
+4. A starting point at which the search can be initialized.
+
+Conceptually, what this looks like is that we have an agent that starts at some location in a search space.  It looks around for the target, and finding none, takes a step to the next location.  Lather, rinse, and repeat.
+
+```{marginfigure}
+Definition: **Local search** is a procedure in which...Under construction: add definition here.
+```
+
+This seemingly simple procedure lies at the heart of **local search**.  And, while the procedure seems simple, it turns out that **local search is one of the most powerful and most common tools in all of AI.**  
+
+We will see local search again and again, and in many different guises, throughout this book.  Many of the techniques we will talk about---heuristic search, genetic algorithms, neural networks, reinforcement learning---all are basically different versions of the same basic local search algorithm specified above.
+
+## Why local search?
+
+Local search relies on the assumption that an intelligent agent can only "see"for a very short distance around its current location in a search space.  This might seem like an unnecessarily limiting assumption.  If we are designing these intelligent agents anyway, why not just give them superpowers, so they can see the whole search space at once and solve the search problem instantly?
+
+## Example: Finding the minimum via local search vs. analytical solution
+
+
+
+
+## The successor function
+
+
+
+## Search graphs and search trees
+
+
+
+
+## Search space size and complexity
+
+
+
+## Putting it all together: The Eight-Puzzle
+
+
+

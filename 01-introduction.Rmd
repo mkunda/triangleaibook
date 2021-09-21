@@ -229,6 +229,3 @@ To conclude this introduction, here are some general recommendations for other A
 - For more on reinforcement learning, Richard Sutton and Andrew Barto's [*Reinforcement Learning: An Introduction*](http://incompleteideas.net/book/the-book.html) is another standard in the field.
 
 - <Under construction: Add The Life of Cognitive Science.>
-
-
-## References
