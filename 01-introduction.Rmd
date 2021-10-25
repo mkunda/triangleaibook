@@ -59,10 +59,15 @@ Unlike other definitions of AI, this definition puts many kinds of intelligence 
 I find it all equally fascinating, and we will consider examples of all of these kinds of intelligence throughout this book.
 
 
+## Examples of problems that AI can solve
+
+<Under construction.>
+
+
 ## Why triangles? {#triangle}
 
 ```{marginfigure}
-Kunda, M. (under review). The AI Triplet: Computational, Conceptual, and Mathematical Representations in AI Education.
+@kunda2021ai
 ```
 
 The name of this book comes from an idea I recently had about the different kinds of knowledge that are necessary for understanding AI:
@@ -107,16 +112,21 @@ knitr::include_graphics("images/triangle-both.png")
 When making the switch into computational- (C) or mathematical-land (M), we will use these triangle symbols to help signal the shift.  Eventually, you will be able to more easily jump around the various levels when thinking about a given AI topic.
 
 
+## Cognitive experiments
+
+<Under construction.  Do them!>
+
+An ecological view of intelligence.
+
+Compare: Take a simple robot, and add this cool capability.  Versus, take this cool capability in humans, and simplify it enough to express it computationally.  The second approach will help you to explicitly think about the gaps between an AI technique and human intelligence.
+
+
 
 ## In this book: How terminology is used
 
-<Under construction.  Start with Feynman quote.>
+<Under construction.>
 
-
-
-## In this book: Cognitive experiments
-
-<Under construction.  Do them!>
+Feynman quote.
 
 
 
@@ -126,7 +136,7 @@ When making the switch into computational- (C) or mathematical-land (M), we will
 
 
 
-## AI & society
+## AI & society {#sec:aiandsociety}
 
 As I sit here drafting this particular subsection (June 2021), here are three recent headlines that caught my eye:
 
@@ -145,6 +155,10 @@ There is a lot of discussion nowadays about the harms caused by AI, which includ
 Of course, we can also talk about how AI can *solve* problems in all of these areas, and there are many kind and intelligent AI experts all over the world working to do just that.
 
 But, I rather suspect that AI is always going to be a very dangerous and bloody double-edged sword.
+
+```{marginfigure}
+<Under construction: Comment on why I deliberately used the word "bloody".>
+```
 
 One way to think about the power of AI is that it can greatly magnify the actions of a single person.  Trying to find a good flight from Accra to Montreal?  One could slowly page through schedules of flights, or use a search algorithm that searches thousands of possible flight combinations every second.  Trying to create a CGI orc for the Hobbit movies?  One could manually design and animate an individual orc, or use simulation algorithms to generate an orc army.
 
@@ -175,6 +189,32 @@ Here is a pseudo-random sampling:
 
 
 
+## Case study: Website analytics and data privacy {#sec:websiteanalytics}
+
+Here is a micro-case-study of AI and how it is shaping society.
+
+When building this website, I faced the choice of how to obtain some website analytics.  I wanted basic information about you, the reader:  how many visits, from which countries, etc.
+
+```{marginfigure}
+This strange exchange became especially clear to me when I read the apt title of this blog post: <a href="https://iainbean.com/posts/2020/google-analytics-a-luxury-your-users-are-paying-for/">Google Analytics: A luxury your users are paying for</a>.
+```
+
+There are many free options, like the widely-used Google Analytics.  However, like the old meme: if you are not paying for it, then you might be the product...except, in this case, *I* am not the product (though I am the one receiving the benefits); *you* (the reader) would be the product!
+
+After pondering this option, I decided that I do not want to barter your personal data in exchange for website analytics data.  The Triangle AI Book instead uses a paid service (that I pay for, with money!) from <a href="https://plausible.io">Plausible.io</a>, an open-source analytics product that does not use cookies or collect any personal data from users.  There are a growing number of similar options for <a href="https://privacyfocusedanalytics.info/">privacy-focused analytics</a> to choose from.
+
+More generally, while consumer data has always carried value, there is no question that AI has monumentally accelerated the scale and usefulness of such data for companies.  Which, like many aspects of AI (as described [above](#sec:aiandsociety)) ends up being both "for better and for worse" for consumers.
+
+Issues of data privacy are worth entire books and courses by themselves, but even if you cannot do such a deep dive, students of AI should have at least a passing familiarity with the core debates.  Here are a few pointers into these discussions:
+
+- An interview with tech columnist Geoffrey Fowler about <a href="https://www.npr.org/2019/07/31/746878763/how-tech-companies-track-your-every-move-and-put-your-data-up-for-sale">How Tech Companies Track Your Every Move And Put Your Data Up For Sale</a>.
+
+- An interview with professor Shoshona Zuboff, who coined the term "surveillance capitalism," about <a href="https://www.wbur.org/onpoint/2019/01/15/surveillance-capitalism-shoshana-zuboff-facebook-data">How Tracking And Selling Our Data Became A Business Model</a>.
+
+- Data privacy laws have started to come into play around the world, such as the European Union's <a href="https://gdpr.eu/what-is-gdpr/">General Data Protection Regulation (GDPR)</a>, and the state of California's <a href="https://oag.ca.gov/privacy/ccpa">California Consumer Privacy Act (CCPA)</a>.
+
+
+
 ## No more simple happy nerds
 
 Like the nuclear scientists (probably like scientists of many stripes over the millennia), I really don't know what to do sometimes.  As an AI scientist, do I keep researching and teaching about AI things, even though they are actively, right now, today being misused?  Do I just stop?  Do I quit my job as a professor and become an investigative journalist, or a political activist?
@@ -195,9 +235,12 @@ And, let me exhort each and every one of you who reads these words:  **As a comp
 
 It can also be as simple as telling your friends and family members about how their online shopping data is getting used, and why they need to be careful about reading certain kinds of social media content.  Or it can be as involved as pursuing a PhD in order to become a world expert on how AI can affect elections, or whatever the issue is that captures your intellectual and emotional interests.
 
-And, no matter what path you take, I think we also all have a responsibility, as computer scientists and AI people, to stay informed about what is going on with AI in the broader world.  The AI techniques we have at our fingertips are changing lightning-fast, and the resulting issues facing humanity are changing even faster.
+And, no matter what path you take, I think we also all have a responsibility, as computer scientists and AI people, to stay informed about what is going on with AI in the broader world.  **The AI techniques we have at our fingertips are changing lightning-fast, and the resulting issues facing humanity are changing even faster.**  We need sharp students like yourself to stay abreast of both of these waves, to help our species navigate these uncharted waters.
 
 Stay informed, and be brave.
+
+
+
 
 
 ## In this book: This is your brain on AI {#sec:yourbrainonai}
@@ -214,18 +257,24 @@ I was re-reading *Dune* recently and was very much struck by this passage:
 
 To conclude this introduction, here are some general recommendations for other AI-related resources:
 
-- Melanie Mitchell's [*Artificial Intelligence: A Guide for Thinking Humans*](https://melaniemitchell.me/aibook/) gives a non-technical but content-rich overview of the broad field of AI, where it has been and where it is going, and descriptions of major approaches.
+- Melanie Mitchell's very recent book [*Artificial Intelligence: A Guide for Thinking Humans*](https://melaniemitchell.me/aibook/) gives a non-technical but content-rich overview of the broad field of AI, where it has been and where it is going, and descriptions of major approaches.
 
-- For more in-depth information about many of the AI topics covered in this book, [*Artificial Intelligence: A Modern Approach*](http://aima.cs.berkeley.edu/), by Stuart Russell and Peter Norvig (often called "AIMA" or "Russell & Norvig"), continues to be a standard in the field.  I still regularly use my old, dark-green, second-edition copy as a desk reference.  In addition to the coverage of technical topics, there is a really fabulous "Bibliographical and Historical Notes" section at the end of each chapter that lays out how the major developments in each area unfolded over time.
+- For more in-depth information about many of the AI topics covered in this book, [*Artificial Intelligence: A Modern Approach*](http://aima.cs.berkeley.edu/) by Stuart Russell and Peter Norvig (often called "AIMA" or "Russell & Norvig") continues to be a standard in the field.  I still regularly use my old, dark-green, second-edition copy as a desk reference.  In addition to the coverage of technical topics, there is a really fabulous "Bibliographical and Historical Notes" section at the end of each chapter that lays out how the major developments in each area unfolded over time.
+
+- <Under construction: Add Poole & Mackworth.>
 
 - UC Berkeley graciously shares many materials from their undergraduate AI course [*CS 188*](https://inst.eecs.berkeley.edu/~cs188/sp21/), including lecture slides, homework problems, and the widely used [Pacman AI Projects](https://inst.eecs.berkeley.edu/~cs188/sp21/projects/).  Their treatment of topics tends to follow Russell & Norvig.
 
 - [*Mind Design II*](http://cognet.mit.edu/book/mind-design-ii), edited by John Haugeland.  Reading this book was one of the most influential intellectual journeys I ever took. Starting with Turing’s classic paper on "Computing Machinery and Intelligence," going through key ideas from thinkers like Newell & Simon, Dennett, Minsky, and Searle (the famous Chinese room argument), on to Rumelhart’s visions of connectionist representations, and so forth. (You can also find many of the individual papers from this collection online, in their original published form.  This book contains edited versions of the originals.)
 
-- For more on machine learning, Tom Mitchell's [*Machine Learning*](http://www.cs.cmu.edu/~tom/mlbook.html) textbook gives an excellent and digestible overview of major approaches and also theoretical angles.  (Do not be put off by the 1997 publication date!  The fundamentals remain.)
+- For more on machine learning, Tom Mitchell's [*Machine Learning*](http://www.cs.cmu.edu/~tom/mlbook.html) textbook gives an excellent and digestible overview of major approaches and also theoretical angles.  (Do not be put off by the 1997 publication date!  The fundamentals abide.)
 
 - For more on neural networks , I recommend Michael Nielsen's [*Neural Networks and Deep Learning*](http://neuralnetworksanddeeplearning.com/), which provides a superb introduction, and [*Deep Learning*](https://www.deeplearningbook.org/), by Ian Goodfellow, Yoshua Bengio, and Aaron Courville, for more advanced topics.
 
 - For more on reinforcement learning, Richard Sutton and Andrew Barto's [*Reinforcement Learning: An Introduction*](http://incompleteideas.net/book/the-book.html) is another standard in the field.
 
 - <Under construction: Add The Life of Cognitive Science.>
+
+## Why textbooks are a good choice for learning AI
+
+<Under construction.>

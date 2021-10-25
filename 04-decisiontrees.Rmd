@@ -1,0 +1,55 @@
+---
+title: "▽△ Triangle AI Book ▽△▽△▽"
+author: "Maithilee Kunda"
+date: "`r Sys.Date()`"
+knit: "bookdown::preview_chapter"
+site: "bookdown::bookdown_site"
+link-citations: no
+apple-touch-icon: "images/apple-touch-icon.png"
+apple-touch-icon-size: 120
+favicon: "images/favicon.ico"
+output:
+  msmbstyle::msmb_html_book:
+    highlight: tango
+    toc: TRUE
+    toc_depth: 1
+    split_by: chapter
+    split_bib: yes
+    margin_references: FALSE
+    css: triangleaibook.css
+    includes:
+      in_header: triangleaibook_header.html
+      after_body: triangleaibook_footer.html
+bibliography: references.bib
+csl: apa-cv-mksort.csl
+---
+
+# Decision Trees
+
+<Under construction. Add chapter intro.>
+
+## Cognitive experiment: Twenty Questions
+
+<Under construction.>
+
+In the game of Twenty Questions, you can use 20 binary (yes/no) questions to try to identify what "thing" the other player is thinking of.  How many possible things can you disambiguate with 20 binary questions?
+
+```{marginfigure}
+Of course, when you are playing this game with another person, S is not really the set of *all* possible things, but rather the set of things known by both of you, based on your shared sociocultural upbringings.  In other words, if you were playing Twenty Questions with someone from a different part of the world and/or a different century---or with an alien---the game probably would not work so well!
+```
+
+Let's see!  Suppose we let S be the set of all "things" in the universe.
+
+The first question essentially divides up set S into 2^1 = 2 disjoint subsets:  S1 and S2.  The second question further divides up these subsets into 2^2 = 4 disjoint subsets:  S11 and S12, and S21 and S22.
+
+After 20 such questions, how many disjoint subsets do we have?  2^20 = 1,048,576 disjoint subsets!  This is a pretty large number, and you can see why the guessers can usually guess the answer in a game of Twenty Questions.
+
+<Under construction: How many nouns does an adult human know?>
+
+<Under construction: Add discussion of the 20Q electronic game.>
+
+
+
+
+
+

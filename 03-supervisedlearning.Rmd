@@ -1,0 +1,147 @@
+---
+title: "▽△ Triangle AI Book ▽△▽△▽"
+author: "Maithilee Kunda"
+date: "`r Sys.Date()`"
+knit: "bookdown::preview_chapter"
+site: "bookdown::bookdown_site"
+link-citations: no
+apple-touch-icon: "images/apple-touch-icon.png"
+apple-touch-icon-size: 120
+favicon: "images/favicon.ico"
+output:
+  msmbstyle::msmb_html_book:
+    highlight: tango
+    toc: TRUE
+    toc_depth: 1
+    split_by: chapter
+    split_bib: yes
+    margin_references: FALSE
+    css: triangleaibook.css
+    includes:
+      in_header: triangleaibook_header.html
+      after_body: triangleaibook_footer.html
+bibliography: references.bib
+csl: apa-cv-mksort.csl
+---
+
+# Supervised Learning
+
+<Under construction. Add chapter intro.>
+
+
+## Cognitive experiment: Rule induction
+
+<Under construction: Experiment 1 and Experiment 2.>
+
+<Under construction: Confirmation bias.>
+
+```{r, echo = FALSE} 
+msmbstyle::question(header = "Exercise 3b",
+                    text = "How could this activity be viewed as search?  *Hint: There are multiple search spaces!*")
+msmbstyle::solution(header = "Solution to Exercise 3b",
+                    text = "1. You were searching through the space of possible examples, in order to select the next example to submit to the oracle.
+                    
+2. In addition, you were also searching through a space of possible rules, in order to find a rule that was consistent with the examples you had received thus far.
+
+3. In addition, at each time step, you were also searching through the space of possible actions (a space of just two actions: guess a rule vs. submit an example) to decide which action to take.",
+                    toggle = TRUE)
+```
+
+
+
+## Rule induction as search
+
+```{marginfigure}
+In the first experiment, the set of possible item values X is all possible integer triplets (which is an infinite set), and the set of possible label values Y is the binary set 0, 1.  In the second experiment, X is all possible triplets of animals (or nouns more generally, or words---depending on the search space the reasoner selects!), and Y is again the binary set 0, 1.
+```
+
+More generally, assume we have a set T of possible *labeled items*.   Each item ti in T consists of a pair of things: some xi in X, which is the set of possible item values, and a label yi in Y, which is the set of possible label values.  In other words, ti is given by the pairing <xi, yi>.
+
+So the first search space in Exercise 3b is selecting the next xi in X to submit to the oracle.
+
+```{marginfigure}
+In the above experiments, rules are any type of relationship among three numbers/animals that can be evaluated as true or false for a given triplet of items.
+```
+
+Next, how do we formalize the set of possible rules?  What is a "rule" anyway?  Informally, a rule is something that relates an item to its label.
+
+More formally, we can think of a rule as a *function* f: X -> Y that takes an input xi and returns some output yj.
+
+```{marginfigure}
+This type of function fi is also often called a hypothesis hi, and the space of possible hypotheses is likewise often labeled as H.  We will use both terms (functions and hypotheses) throughout this book; they are fairly interchangeable.
+```
+
+For a given rule induction problem, the *correct* function f* should, for every xi in X, return the correct label yi.  But the space F of all possible functions includes many incorrect functions also, i.e., functions fi in F that, for one or more xi in X, return an incorrect label yj.
+
+<Don't know full T... only know subset of examples received so far, Tknown.  Also mention how sometimes you might know all of X without labels, sometimes not.  Likewise with Y.>
+
+Thus, the second search space in Exercise 3b is, given the set of examples received so far, selecting a candidate function fi in F, i.e., the reasoner's guess for what the correct rule is.
+
+```{marginfigure}
+This third search space is more like a quirk of the particular rule induction task that we used for our experiment, so we focus most of this chapter on the first two search spaces, and in fact mostly on the search for *functions*.
+```
+
+The third search space, as described in Solution 3b above, is just selecting from among the two possible actions of either proposing a new item or proposing a new rule.
+
+
+
+## Cognitive experiment: Rule induction from a fixed set of examples
+
+In the prior experiments, the reasoning agent was simultaneously searching for items xi in X to be labeled, as well as functions fi in F to consider as candidates for the target rule.  Next, we consider a simplified variant of the rule induction task in which we assume a fixed set of labeled examples.  This task is based on a clever brainteaser.
+
+<Under construction.  Add puzzle here.  Also add hidden hint.>
+
+
+
+## Standard supervised learning
+
+This experiment was different from the earlier ones because you just had one search space to contend with: searching for candidate functions fi in F.  The set of examples you had to work with, Tknown in T, was fixed.  In other words, the specific search problem was:
+
+**Given Tknown in T, select one candidate function fi in F that best explains Tknown.**
+
+It turns out that this exact problem is what is called *supervised learning* in AI.  Supervised learning is one type of machine learning, and probably currently the biggest sub-area of machine learning in terms of real-world applications.
+
+The reason supervised learning is so powerful and widely used is that, if you have good techniques for doing this particular type of search (which we do have!), you can take lots of very different kinds of real world problems and write them as supervised learning problems.  For example:
+
+<Under construction: Examples.>
+
+There are also other, more unfortunate examples of things that can be (and in fact have been) defined as supervised learning problems, such as:
+
+<Negative examples.>
+
+## Core technical issues in supervised learning
+
+- Evaluation
+
+- Hypothesis space and search algorithm
+
+- Features
+
+## Evaluating supervised learning solutions
+
+
+## The hypothesis space
+
+
+## The search algorithm
+
+
+## Features
+
+
+
+## Supervised learning variants
+
+- deep learning
+
+- active learning
+
+- semi-supervised learning
+
+- self-supervised learning
+
+
+
+
+
+
