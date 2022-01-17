@@ -31,7 +31,7 @@ csl: apa-cv-mksort.csl
 
 There are probably as many definitions of AI as there are AI textbooks.  (Actually there are probably a lot more, if we count definitions in papers, popular science books, essays, etc.)  (The number of definitions of AI is probably exponential in the number of textbooks!)
 
-In this book, I propose the following definition:
+In this book, we'll use the following definition:
 
 > AI is the study of how knowledge representations and search algorithms can be used to solve 
 complex problems.
