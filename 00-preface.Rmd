@@ -24,10 +24,10 @@ bibliography: references.bib
 csl: apa-cv-mksort.csl
 ---
 
-# Introduction {#introduction}
+# Preface {#preface -}
 
 
-## What is artificial intelligence?
+## What is artificial intelligence? {-}
 
 There are probably as many definitions of AI as there are AI textbooks.  (Actually there are probably a lot more, if we count definitions in papers, popular science books, essays, etc.)  (The number of definitions of AI is probably exponential in the number of textbooks!)
 
@@ -59,12 +59,12 @@ Unlike other definitions of AI, this definition puts many kinds of intelligence 
 I find it all equally fascinating, and we will consider examples of all of these kinds of intelligence throughout this book.
 
 
-## Examples of problems that AI can solve
+## Examples of problems that AI can solve {-}
 
 <Under construction.>
 
 
-## Why triangles? {#triangle}
+## Why triangles? {#triangle -}
 
 ```{marginfigure}
 @kunda2021ai
@@ -112,7 +112,7 @@ knitr::include_graphics("images/triangle-both.png")
 When making the switch into computational- (C) or mathematical-land (M), we will use these triangle symbols to help signal the shift.  Eventually, you will be able to more easily jump around the various levels when thinking about a given AI topic.
 
 
-## Cognitive experiments
+## Cognitive experiments {-}
 
 <Under construction.  Do them!>
 
@@ -122,7 +122,7 @@ Compare: Take a simple robot, and add this cool capability.  Versus, take this c
 
 
 
-## In this book: How terminology is used
+## In this book: How terminology is used {-}
 
 <Under construction.>
 
@@ -130,13 +130,13 @@ Feynman quote.
 
 
 
-## In this book: Exercises
+## In this book: Exercises {-}
 
 <Under construction.  Do them!>
 
 
 
-## AI & society {#sec:aiandsociety}
+## AI & society {#sec:aiandsociety -}
 
 As I sit here drafting this particular subsection (June 2021), here are three recent headlines that caught my eye:
 
@@ -189,7 +189,7 @@ Here is a pseudo-random sampling:
 
 
 
-## Case study: Website analytics and data privacy {#sec:websiteanalytics}
+## Case study: Website analytics and data privacy {#sec:websiteanalytics -}
 
 Here is a micro-case-study of AI and how it is shaping society.
 
@@ -215,7 +215,7 @@ Issues of data privacy are worth entire books and courses by themselves, but eve
 
 
 
-## No more simple happy nerds
+## No more simple happy nerds {-}
 
 Like the nuclear scientists (probably like scientists of many stripes over the millennia), I really don't know what to do sometimes.  As an AI scientist, do I keep researching and teaching about AI things, even though they are actively, right now, today being misused?  Do I just stop?  Do I quit my job as a professor and become an investigative journalist, or a political activist?
 
@@ -243,7 +243,7 @@ Stay informed, and be brave.
 
 
 
-## In this book: This is your brain on AI {#sec:yourbrainonai}
+## In this book: This is your brain on AI {#sec:yourbrainonai -}
 
 I was re-reading *Dune* recently and was very much struck by this passage:
 
@@ -253,7 +253,7 @@ I was re-reading *Dune* recently and was very much struck by this passage:
 
 
 
-## Other resources {#sec:resources}
+## Other resources {#sec:resources -}
 
 To conclude this introduction, here are some general recommendations for other AI-related resources:
 
@@ -275,6 +275,6 @@ To conclude this introduction, here are some general recommendations for other A
 
 - <Under construction: Add The Life of Cognitive Science.>
 
-## Why textbooks are a good choice for learning AI
+## Why textbooks are a good choice for learning AI {-}
 
 <Under construction.>
