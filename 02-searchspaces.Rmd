@@ -24,7 +24,7 @@ bibliography: references.bib
 csl: apa-cv-mksort.csl
 ---
 
-# Search Spaces
+# Every Little Thing We Do Is Search
 
 <Under construction. Add chapter intro.>
 
@@ -32,226 +32,321 @@ csl: apa-cv-mksort.csl
 
 *What you will need: A piece of paper, a writing utensil, and a timer.*
 
-There are an interesting category of tasks used in psychology research called *fluency* tasks, in which you have to come up with as many things of a certain type as you can within a fixed time limit.  Let us try some fluency tasks here.
+There is an interesting category of tasks used in psychology research called *fluency* tasks: within a fixed time limit, you have to come up with as many things of a certain type as you can.  
+
+To kick off this chapter, we are going to do a series of three different fluency tasks (where "we" = you!).
 
 ```{marginfigure}
-If you know more than one language, you should feel free to try these tasks in the language you are most comfortable in!  Or better yet, try doing the tasks in two different languages, though you will need to come up with your own targets for the second time around.  How does it feel to do these tasks in one language versus the other?
+If you know more than one language, you can try these tasks in whatever language you feel most comfortable!  Or even try doing them in different languages, and see how each one feels.  Here are some random generators you can use for your target [letters](https://perchance.org/random-letter-gen), [categories](https://perchance.org/common-categories), and [objects](https://perchance.org/object).
 ```
 
-**Task 1. Letter fluency.**  You will have one minute to write down as many words as you can think of that start with the target letter given below.  (Multiple words that share the same stem but different endings, like "swim" and "swimming," do not count.)  Set your timer for one minute, and as soon as you start it, click to reveal the target letter.
+**Task 1. Letter fluency.**  You will have one minute to write down as many words as you can that start with a given letter.  For example, if the target letter were "s," then you might write, "swim start stop stick" etc.  Multiple words that share the same stem do not count (like "swim" and "swam" and "swimming"), and no proper nouns (like "Siberia" or "Spiderman").
+
+Set your timer for one minute, and click below to reveal the target letter as soon as you start your timer.
 
 ```{r, echo = FALSE} 
 msmbstyle::solution(text = "Target letter: F",
-                    header = "Click icon on the right to reveal target",
+                    header = "Task 1. Click icon on the right to reveal target letter",
                     toggle = TRUE)
 ```
 
-**Task 2. Category fluency.**  You will have one minute to write down as many words as you can think of that fit into the target category given below.  Set your timer for one minute, and as soon as you start it, click to reveal the target category.
+How many words did you come up with?  As you look back at your list now, do you see any patterns?  Any words you were particularly proud of?
+
+Just take a minute to reflect on what you did, and especially *how* you did it, and we'll come back to this task in a bit.
+
+Okay, next task!
+
+**Task 2. Category fluency.**  You will have one minute to write down as many items as you can that fit into a given category.  For example, if the category were "winter Olympic sports," then you might write, "ice dancing, luge, speed skating" etc.
+
+Set your timer for one minute, and click below to reveal the target category as soon as you start your timer.
 
 ```{r, echo = FALSE} 
-msmbstyle::solution(text = "Target category: Ocean animals",
-                    header = "Click icon on the right to reveal target",
+msmbstyle::solution(text = "Target category: Sea animals",
+                    header = "Task 2. Click icon on the right to reveal target category",
                     toggle = TRUE)
 ```
 
-```{marginfigure}
-@guilford1951factor
-```
+As with Task 1, look at your list.  How many items?  Any particularly good ones?  We'll come back to this task as well.
 
-**Task 3. Alternative uses test.**  You will have **three** minutes to write down as many uses as you can think of for the target object given below.  (For example, if the target object were a newspaper, you could: 1) read it; 2) roll it up as a flyswatter; 3) hold over your head as a temporary umbrella; etc.)  Set your timer for three minutes, and as soon as you start it, click to reveal the target object.
+Okay, next task!
+
+**Task 3. Alternative uses test.**  This one is a bit different from the first two.  Now, you will have **three** minutes to write down as many uses as you can for a given object.  For example, if the target object were a newspaper, you might write, "read it; roll up as flyswatter; hold over head as umbrella; use as tinder to start fire;" etc.  As in this example, your uses can include both conventional uses of the object as well as creative uses.
+
+Set your timer for three (3) minutes, and click below to reveal the target object as soon as you start your timer.
 
 ```{r, echo = FALSE} 
 msmbstyle::solution(text = "Target object: A single brick",
-                    header = "Click icon on the right to reveal target",
+                    header = "Click icon on the right to reveal target object",
                     toggle = TRUE)
 ```
 
-Now, take a look at each of the three lists you have come up with.  There are many ways to evaluate what you did.  For instance, how many items did you generate for each one?  Or, how *interesting* were the examples you came up with?  Are there examples that you are particularly proud of?
+How many uses were you able to come up with?  Any patterns to your answers?  Any interesting outliers?
 
-All three of these tasks can be thought of as a form of *search*.  In the first two tasks, you were searching through your prior knowledge to find items that fit the specification.  The third task was a little different:  you were searching using your prior knowledge, but likely using that prior knowledge to come up with brand new ideas.
+## Fluency tasks as a form of search, plus 5 key observations
 
-## Problems as search spaces
-
-```{marginfigure}
-Definition: A **search space** is a set of items meeting some broad criteria, within which an intelligent agent can (somehow) seek a subset of items meeting some more specialized target criteria.
-```
-
-One of the core ideas that permeates virtually all of AI is the notion of a **search space**.  Many problems in intelligence can be described as a search space that consists of many possibilities, and the solution to the problem involves sifting through those possibilities in some fashion to find the right one (or the best one, or the best several, etc.).
-
-For example, finding your car keys in the morning is an example of a problem that involves a physical search space---the set of all items in your abode---and the target item is a unique physical object---your set of keys.
-
-The fluency tasks above can also be thought of in terms of search spaces, but these search spaces are not physical ones.  For Task 1, the search space is your prior knowledge of English words, and the target criterion is words starting with a particular letter.  
-
-For Task 2, the search space is your prior knowledge of animals, and the target criterion is animals that live in the ocean.  Or, the search space could be your prior knowledge of things in the ocean, and the target criterion could be animals.  There are often multiple ways to think about what the search space is for a given problem.
-
-Task 3 is a little different, because you were likely generating *new* items during your search.  Task 3 is a good illustration of how search spaces don't have to pre-exist in their entirety.  We can think of some abstract hypothetical search space (e.g., the space of all possible uses for an object), and then the search process is actually instantiating certain items in this hypothetical space as it goes (just as you were generating specific ideas during Task 3).
-
-```{r, echo = FALSE} 
-msmbstyle::question(header = "Exercise 2a",
-                    text = "Consider the problem of playing a game of chess.  How would you describe this problem in terms of one or more search spaces?")
-msmbstyle::solution(header = "Solution to Exercise 2a",
-                    text = "Under construction: Solution to be added",
-                    toggle = TRUE)
-```
-
-```{r, echo = FALSE} 
-msmbstyle::question(header = "Exercise 2b",
-                    text = "Consider the problem of walking down a sidewalk.  How would you describe this problem in terms of one or more search spaces?")
-msmbstyle::solution(header = "Solution to Exercise 2b",
-                    text = "Under construction: Solution to be added",
-                    toggle = TRUE)
-```
-
-```{r, echo = FALSE} 
-msmbstyle::question(header = "Exercise 2c",
-                    text = "Consider the problem of writing a poem.  How would you describe this problem in terms of one or more search spaces?")
-msmbstyle::solution(header = "Solution to Exercise 2c",
-                    text = "Under construction: Solution to be added",
-                    toggle = TRUE)
-```
-
-## Intelligent agents as search agents
+All three of these tasks can be thought of as a form of search:
 
 ```{marginfigure}
-Definition: A **search agent** is an active entity or process that performs operations on a search space in order to find some target(s).
+$\Leftarrow$  What is search?
 ```
 
-Given a problem described in terms of a search space, the next ingredient is having some **search agent** that can do the searching.  In the finding-your-keys example, your roomful of stuff is just a bunch of stuff until you (the search agent) start looking for your keys.  Then, your roomful of stuff becomes a search space.  Similarly, in the fluency tasks, the search agent is you.
+::: {.definition #search}
+*Search* is the process of sifting through a large collection of possibilities to select a smaller number of things that meet some target criteria or goal.
+:::
+
+The "large collection of possibilities" in this definition is called a search space.
 
 ```{marginfigure}
-Definition: An **intelligent agent** is an active entity or process that performs operations of some kind in order to solve some problem.
+$\Leftarrow$  What is a search space?
 ```
 
-In AI, we often use the more general term **intelligent agent** to refer to the active entity or process that is doing whatever it is doing to solve a problem.  Intelligent agents include humans, non-human animals, and computer programs.  
+::: {.definition #searchspace}
+A *search space* is a collection of possibilities that can be sifted through by some search process.
+:::
 
-A search agent can be thought of as a specific type of intelligent agent that solves problems via search.  As we will see throughout this book, virtually all intelligent agents modeled in AI are search agents of some kind, but we'll mostly stick to using the term "intelligent agents" from here on out.
 
-## Search spaces have structure
+
+A central idea we shall consider throughout this book is that **virtually all of the activities that we call "intelligent" can be viewed as forms of search.**  
+
+In other words, "intelligence" is what you use when there are a large number of possible things that you *could* choose, and you want to choose just the right one or ones.  This is true of the biological intelligence that we observe in humans and animals, and it is also true of the AI techniques that we develop for building artificial agents.
+
+Next, we will analyze our three fluency tasks in more detail.  This analysis will raise five observations that are all very relevant, and very central, to thinking about intelligence as search.
+
+<Under construction.  five observations>
+
+AI is the study of how to take complex problems and:
+
+1. Describe each problem in terms of one or more search spaces and associated goals.
+2. Develop and evaluate algorithms for effectively searching through these spaces.
+
+
+
+## Examples of intelligent activities as search
+
+<Under construction...  chess, medical diagnosis, writing a poem, hiking>
+
+https://www.youtube.com/watch?v=L90OH61-33c
+
+
+
+## Modeling search spaces as graphs
+
+We've talked a bit about how a search space consists of "a collection of possibilities," and also about how this collection will have some sort of structure to it---i.e., some sort of rhyme or reason as to how the possibilities are organized within it.
+
+A very common way of modeling the structure of a search space is to describe the space as a graph.
 
 ```{marginfigure}
-Definition: The **structure of a search space** refers to the organization of the items within it.
+$\Leftarrow$  What is a graph?
 ```
 
-In order to be able to do anything with a search space, an intelligent agent must have some kind of access to the items inside it.  How that access works depends on the **structure** of the search space.
+::: {.definition #searchspace}
+A *graph* is a collection of things together with the relationships among them.  Each "thing" in a graph is called a *node* (or a *vertex*), and the existence of a relationship between two things is called an *edge*.
+:::
 
-For example, when looking for your keys, there is a pre-existing physical organization of all of your stuff, by location and by room.  When you are searching, you can move from looking under the couch cushions to looking on your desk to peeking inside the fridge--- you are following some path through the search space that follows the contours of its physical layout.
+Before we jump into graphs and their role in search, let's first consider graphs more generally, along with some of their variations and properties.  
+
+Graphs in their own right are the subject of entire disciplines in mathematics (e.g. graph theory) and computer science (e.g. graph algorithms).  The reason they are so fantastically useful is that many, many aspects of the world can be described as "a collection of things and the relationships among them."
+
+For example, a love triangle can be described as a small graph.  There are three nodes, representing the three people involved.  Without loss of generality, and picking names totally at random, let us call them Bella, Edward, and Jacob.  The simplest description of the love triangle would be to have these three nodes, and then add edges between Bella and Edward, and also between Bella and Jacob.  Classic love triangle conundrum. 
+
+Or, we could add a little bit more information by labeling these edges as "love" edges.  And then, we could add an "antagonism and jealousy" edge that goes between Edward and Jacob.
+
+"But wait!" the attentive reader exclaims.  "The love edge between Bella and Edward is not at all the same as the one between Bella and Jacob!"
+
+Good point!  But that can be easily fixed by adding yet more information to our graph.  First, we can make the edges uni-directional instead of bi-directional, i.e., arrows instead of just lines.  Then, we can have regular "loves" arrows going from Bella to Edward, from Edward to Bella, and from Jacob to Bella.  And then we can add a different kind of arrow from Bella to Jacob, something like, "loves but in a different way."
+
+We could also assign numerical scores to the edges, to reflect the strength of the relationship.  For example, let us add a fourth node---again, picking a name totally at random, let's call it Mike.  Mike also loves Bella, but with an edge strength of about 0.05, while Edward loves Bella with an edge strength of 1,000.
+
+<Under construction.  Add diagram.>
+
+This is a silly little example to be sure, but it illustrates several important properties of graphs:
+
+1. Nodes in a graph can have information associated with them, and so they are often designated to represent some conceptual entities in the world.  Nodes can be assigned to stand for people, places, things, ideas, etc.
 
 ```{marginfigure}
-When looking for your keys, you do have access to a search space beyond the physical space you are in.  You also have a mental model, i.e., a stored representation of the space in your mind, in which you are not constrained by physical reality.  For instance, in your mental model, you can instantly jump from point A to point B without having to "walk" the points in between.
+In graph theory, *hypergraphs* are a variation on graphs in which edges can connect more than two nodes, but we won't get into that here.
 ```
 
-The structure of a search space can limit how an intelligent agent can search through it.  For example, when looking for your keys, you cannot be in two places at once, and you cannot go from point A to point B without physically walking through the points in between.
-
-However, the structure of a search space can also help an intelligent agent search through it.  For example, when looking for your keys, you might proceed methodically from one room to the next.  Now, the physical structure of the search space (i.e., your home being divided into separate rooms) helps you *decompose* the bigger search problem into several smaller search problems that you can solve independently.
-
-Search spaces can also have multiple kinds of structure layered onto them.  For example, when looking for your keys, one type of structure is the physical layout of the space.  Another type of structure might be the spatiotemporal structure of where you have been most recently.  For example, instead of searching room by room, you might search by retracing your steps since you last got home and threw your keys somewhere.
+2. Each edge connects exactly two nodes.  And, for any two nodes in a graph, they are either connected or not connected.
 
 ```{marginfigure}
-*Structure is in the eyes of the beholder?*  Describing the structure of a search space often requires taking into account the capabilities or limitations of a particular agent.  For example, the physical layout of a room might seem like an absolute property, but that is only because we are three-dimensional agents that live inside three-dimensional physical bodies.  If a teleporting alien were looking for your keys, then the physical layout of your things would no longer be a defining characteristic of the structure of the search space.
+*Multigraphs* are a variation on graphs in which two nodes can be connected by more than one (undirected) or two (directed) edges, but we won't get into that here either.
 ```
 
-This example about spatiotemporal structure raises an important but subtle point about the structure of search spaces.  Sometimes, the structure is an **intrinsic** property of the search space itself (like the pre-existing physical layout of an area).  Other times, the structure is **extrinsic** to the search space and comes instead from the intelligent agent  (like your memories of where you have recently been).
+3. Edges can be bidirectional (e.g., a line segment connecting two nodes) or uni-directional (e.g., an arrow pointing from one node to another.)  Graphs with bidirectional edges are called *undirected graphs*, while graphs with uni-directional edges are called *directed graphs*.  Undirected graphs can have at most one edge between any two nodes, while directed graphs can have up to two edges between two nodes, i.e., one going in each direction.
 
-Data structures in computer programming also provide an excellent illustration of the structure of spaces of things.  <Under construction: Finish this explanation.>
+4. Edges can either be plain (e.g., just an unspecified connection between two nodes) or they can be labeled in some way.  Labels can be categorical (e.g., "love" versus "antagonism"), and/or they can have real-valued numerical labels, which are often called *weights* or *costs*.
 
-<Under construction: Add about if there is no structure.>
+5. <to add: trees are directed acyclic graphs.>
 
-```{r, echo = FALSE} 
-msmbstyle::question(header = "Exercise 2d",
-                    text = "<Under construction: Add exercise.>")
-msmbstyle::solution(header = "Solution to Exercise 2d",
-                    text = "Under construction: Solution to be added",
-                    toggle = TRUE)
-```
+Coming back to search, it turns out that graphs (including all of the variations listed above) are very handy tools for modeling search spaces, because:  **the "collection of possibilities" in a search space can be modeled as the set of nodes in a graph, and the ways in which an intelligent agent can "sift through" the space, moving from one possibility to the next, can be modeled as the set of edges in the graph.**
 
+## Examples of search spaces as graphs
 
-```{r, echo = FALSE} 
-msmbstyle::question(header = "Exercise 2e",
-                    text = "<Under construction: Add exercise.>")
-msmbstyle::solution(header = "Solution to Exercise 2e",
-                    text = "Under construction: Solution to be added",
-                    toggle = TRUE)
-```
+Searching for something across different **spatial locations** is one of the most straightforward examples of modeling a search space as a graph.  For example, consider the task of driving around.  We can model various locations as nodes, and roads as edges.  Then, finding a path from your house to the airport can be done by finding a series of connected nodes in the graph that lead from your house node to the airport node.
 
-## Local search
+<Add discussion of directed versus undirected, and weighted versus unweighted.>
 
-We've talked a bit vaguely til now about intelligent agents "searching through" or "traversing" search spaces.  What does this mean?
+<Under construction.  Add diagram.>
 
-If we take the analogy of a search space being like a physical area, then an intelligent agent is like a little creature that can run around to various locations in this area and perceive things at its current location.  In other words, the agent cannot (generally speaking) "see" the entire space at once.  Instead, just as you focus you attention on a sequence of particular locations while looking for your keys, the agent can only perceive information about one little piece of the search space at a time.
+Or, consider the task of finding your keys in your house.  Different locations in your house can be the nodes, and all of the patches of floor that you walk on to get around can be the edges.
 
-In particular, the agent typically gets two different types of information about its current location in the search space:
+<Under construction.  Add diagram.>
+
+While these two examples are similar in some ways, they are also different in one important way.  In the first example, the goal of the search involves finding a *path* through the search graph, i.e., a connected sequence of nodes.  In the second example, the goal of the search is not really about the path as much as it is about just finding the single node (coffee table, backpack, couch cushions, refrigerator, ...) that happens to contain your keys at that moment.  Throughout this book, we will see many examples of both of these types of search goals.
+
+Searching for a sequence across **time** is also a very common example of modeling a search space as a graph.  For example, suppose you are very grumpy right now, and you are trying to figure out how to improve your mood.  Let your current mood be a node in a graph, and let the edges coming out from this node represent the different choices that are available to you:  take a nap, go for a walk, keep reading this book, eat some ice cream, etc.  Each edge will take you to some other mood-node, and you might search through these possibilities to figure out which temporal "path" to take through your day in order to be in a good mood at the end.
+
+<Under construction.  Add diagram.>
+
+Many games are also easily modeled as sequences through time:  each node in the graph represents a possible state of the game at a given moment, and edges in the graph represent how the game can transition from one state into another.  This applies to board games, card games, video games, etc.
+
+<Under construction.  Add diagram.>
+
+Finally, some search spaces are modeled as graphs primarily to capture the **limitations or idiosyncrasies of the intelligent agent** that is doing the searching, even if there are no obvious physical or temporal restrictions on the possibilities being searched.  For example, consider the very first task we started with in this chapter, letter fluency.  Let all of the words you know be modeled as nodes in a graph.  Then, edges in this graph can represent the leaps between words that your mind might make as you are performing the task.  Now, there is no *a priori* reason that you can't jump from a particular word to any other word.  However, the word jumps you would end up making likely reflect many obscure aspects of how your mind organizes and accesses information in a given moment.  So, this particular graph is not as well-defined as, say, a graph of locations and roads in a city.  But we can still use such a graph to model your search process on this task.
 
 ```{marginfigure}
-The **structure** that we talked about in the previous subsection is used by #2 on this list.
+wordnet
 ```
 
-1. Is the search target at this location?
+For example, if the target letter were "s", then if you thought of the word "start," it is likely that there is an edge going from "start" to "stop," and your next word might come out to be "stop."  <Add something about word associations.>
 
-2. Where can I go from here?
+<Add example of starting with a word and perturbing letters.>
 
-Notice that if these two things are **all** that an agent knows about the search space that it is in, it can toddle around and do some searching!
+<Add example of picking words at random from a dictionary.>
 
-In fact, we could write a little recursive search loop for this:
+<In some cases, it might seem like the search graph is a function of the environment, but it is also a function of the agent.  Affordances!  picking up crumbs example.>
+
+<Exercises: web surfing.  6 degrees of kevin bacon.  erdos-bacon-sabbath number.>
+
+## A very simple search algorithm
+
+Suppose we have some given search graph $\large S$, consisting of nodes $\large N$ connected by edges $\large E$.  We represent our search goal as a function that returns true or false for any given node: $\large goalTest: N \rightarrow \{0, 1\}$.  
 
 ```{marginfigure}
-You may notice some obvious ways we could make this search loop work better.  For example, shouldn't the agent keep track of where it has been, so that it does not search the same location twice?  And what if the agent gets into a dead-end, but could have found the target if it had just made a different choice earlier?  All of these are very valid points that will be addressed in the next chapter, when we start discussing specific search algorithms.
+$\Leftarrow$  What is a successor function?
 ```
+
+Finally, we define one additional helper function that, given a particular node, returns a list of all of the adjacent nodes that we can get to from there:  $\large getSuccessors: N \rightarrow N$.  These "can-get-to" nodes are often called successors or children of the parent node.
+
+Then, we can write a very simple search algorithm:
 
 ``` 
-  function LocalSearchLoop(currentLocation, target) -> boolean
-      if (hasTarget(currentLocation, target))
-          return true;
-      options = getPossibleLocations(currentLocation);
-      if (options == null)
-          return false;
-      nextLocation = chooseOne(options);
-      return LocalSearchLoop(nextLocation, target);
-  end
-  
-  function DoLocalSearch(startingLocation, target) -> boolean
-      return LocalSearchLoop(startingLocation, target);
+  function SimpleSearchLoop(function goalTest, function getSuccessors, 
+    node currentNode) -> node
+      
+      if (goalTest(currentNode))
+          return currentNode;
+      
+      list options = getSuccessors(currentNode);
+      if (options.isEmpty())
+          return null;
+          
+      node nextNode = chooseOne(options);
+      return SimpleSearchLoop(goalTest, getSuccessors, nextNode);
   end
 ```
 
-Notice that, in addition to getting these two pieces of information from the search space, the agent also needs:
+Given any search graph, we can now run a search just by calling this function on any starting node from that graph.  Let us consider some properties of this search algorithm.
 
-3. Some internal method for choosing which of the possible options it will go to next.
-
-4. A starting point at which the search can be initialized.
-
-Conceptually, what this looks like is that we have an agent that starts at some location in a search space.  It looks around for the target, and finding none, takes a step to the next location.  Lather, rinse, and repeat.
+First, the function chooseOne is used to select which successor to move to next.  If chooseOne is set to be random, then this search algorithm is essentially a random walk over the search graph.  That *could* be a good thing, in that our search will potentially (albeit slowly) travel around to interesting places in the graph.  
 
 ```{marginfigure}
-Definition: **Local search** is a procedure in which...Under construction: add definition here.
+Imagine you are stuck in a hedge maze, and you try to get out by rolling a dice at each intersection and choosing your next move completely at random.  You are going to be stuck in there ALL day!  Unless you just happen to get very lucky, that is.
 ```
 
-This seemingly simple procedure lies at the heart of **local search**.  And, while the procedure seems simple, it turns out that **local search is one of the most powerful and most common tools in all of AI.**  
+On the other hand, it's also a bit dumb, for a couple of reasons.  First, because the search halts as soon as you get to a "dead-end" node, we might halt prematurely even though there are other places in the graph that we could have explored.  In other words, if there is some way to keep track of our choice points, then if we do hit a dead end, we could go back and explore some different choices.
 
-We will see local search again and again, and in many different guises, throughout this book.  Many of the techniques we will talk about---heuristic search, genetic algorithms, neural networks, reinforcement learning---all are basically different versions of the same basic local search algorithm specified above.
+```{marginfigure}
+In our hedge maze, it would be nice if we had little bits of ribbon or something that we could tie off every time we are at an intersection and go down a particular direction.  That way, the next time we return to that same intersection, we can see where we've already been, and make sure to go in a different direction.
+```
 
-## Why local search?
+Second, we might spend time exploring nodes that we've already seen before.  If we could keep track of where we had previously been, then that would clearly save us a lot of wasted effort.
 
-Local search relies on the assumption that an intelligent agent can only "see"for a very short distance around its current location in a search space.  This might seem like an unnecessarily limiting assumption.  If we are designing these intelligent agents anyway, why not just give them superpowers, so they can see the whole search space at once and solve the search problem instantly?
+A bit later, we'll look at search algorithms that include these enhancements.  However, for now, we'll stick with the simple version to illustrate one more important concept in search: namely, *search trees*.
+
+## Turning graphs into trees
+
+Consider our simple search algorithm from above.  An agent running this algorithm would bounce around the search graph, moving from node to node.  Each time it hits a node, if that node isn't the goal, then it looks at its options from that node, and then continues.
+
+If you think of the graph *from the perspective of this search agent*, then the graph might look something like this:
+
+<diagram of partial tree.>
+
+Notice that, while *we* know there is a whole graph sitting there, and the agent is running around in it...from the perspective of the agent itself, it *looks* like a skinny little tree.  The starting node is the root of the tree, and each time the agent calls the function `getSuccessors(currentNode)`, it generates the set of available branches coming out from `currentNode`.
+
+Now, we'll add one more perspective-change onto this idea.  The tree above depends on the agent's choices during its search; it only shows the parts of the search space that the agent actually travels through.  Imagine instead that we could see a version of the tree that encompassed ALL of the agents possible choices, and not just the ones that it ended up choosing.  Then, we would have something like this:
+
+<diagram of full tree with partial tree highlighted.>
+
+For a given search graph, this is what we call the corresponding search tree.
+
+```{marginfigure}
+$\Leftarrow$  What is a search tree?
+```
+
+::: {.definition #searchtree}
+A *search tree* is ....
+:::
+
+
+## Search tree size: Branching factor and depth
+
+```{marginfigure}
+$\Leftarrow$  What is branching factor of a search tree?
+```
+
+The branching factor of a search tree refers to how many branches (on average) come out from each node.  If a search graph, if every node has exactly the same number of children, then the branching factor of our tree will be a constant.  If, on the other hand, different nodes have different numbers of children, then the branching factor will vary across our tree, but we can still usually compute some kind of approximate branching factor (e.g., average branching factor, or upper and lower bounds, etc.).
+
+```{marginfigure}
+$\Leftarrow$  What is depth of a search tree?
+```
+
+The depth of a search tree refers to how many layers deep the tree is.  
+
+<Example of finite graph, finite depth tree.>
+
+<Example of finite graph, infinite depth tree.>
+
+<Because the tree is from the perspective of the search agent, the branching factor and depth depend just as much on the properties of the agent as they do on the properties of the graph.  E.g. visit repeated states or not.>
+
+<Number of nodes in a search tree of depth d = b^d.>
+
+
 
 ## Example: Finding the minimum via local search vs. analytical solution
 
 
 
 
-## The successor function
-
-
-
-## Search graphs and search trees
 
 
 
 
-## Search space size and complexity
 
 
 
-## Putting it all together: The Eight-Puzzle
 
+
+## Putting it all together: Chess
+
+
+## To add...
+
+```{marginfigure}
+@guilford1951factor
+```
+
+More on AUT here.
+
+```{marginfigure}
+Alan Newell and Herbert Simon, two pioneers of AI, ...
+```
+
+More on search here.
+
+reflex agents (knee jerk, and blinking?  recognition is not reflex)
+
+feed-forward agents
 
 
