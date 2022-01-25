@@ -26,6 +26,8 @@ csl: apa-cv-mksort.csl
 
 # Preface {#preface -}
 
+## Why I am writing this book {-}
+
 
 ## What is artificial intelligence? {-}
 

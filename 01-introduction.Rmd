@@ -27,3 +27,17 @@ csl: apa-cv-mksort.csl
 # Introduction {#introduction}
 
 <intro goes here>
+
+windows exercise
+
+what is knowledge
+
+all models are wrong; some are useful
+
+intelligent agents
+
+biological intelligence
+
+artificial intelligence
+
+information processing systems
