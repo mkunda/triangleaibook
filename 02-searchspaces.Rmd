@@ -164,13 +164,13 @@ This is a silly little example to be sure, but it illustrates several important 
 1. Nodes in a graph can have information associated with them, and so they are often designated to represent some conceptual entities in the world.  Nodes can be assigned to stand for people, places, things, ideas, etc.
 
 ```{marginfigure}
-In graph theory, *hypergraphs* are a variation on graphs in which edges can connect more than two nodes, but we won't get into that here.
+In graph theory, *hypergraphs* are a variation on graphs in which edges can connect more than two nodes, but we won't get into those here.
 ```
 
 2. Each edge connects exactly two nodes.  And, for any two nodes in a graph, they are either connected or not connected.
 
 ```{marginfigure}
-*Multigraphs* are a variation on graphs in which two nodes can be connected by more than one (undirected) or two (directed) edges, but we won't get into that here either.
+*Multigraphs* are a variation on graphs in which two nodes can be connected by more than one (undirected) or two (directed) edges, but we won't get into those here either.
 ```
 
 3. Edges can be bidirectional (e.g., a line segment connecting two nodes) or uni-directional (e.g., an arrow pointing from one node to another.)  Graphs with bidirectional edges are called *undirected graphs*, while graphs with uni-directional edges are called *directed graphs*.  Undirected graphs can have at most one edge between any two nodes, while directed graphs can have up to two edges between two nodes, i.e., one going in each direction.
