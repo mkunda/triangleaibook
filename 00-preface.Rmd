@@ -28,8 +28,21 @@ csl: apa-cv-mksort.csl
 
 ## Why I am writing this book {-}
 
+For the past 18 or so years, I have spent a large portion of my time thinking about how people (and other organisms) think.  I find the phenomenon of intelligence utterly fascinating.  So much of what we do so effortlessly, every moment of every day, is unbelievably complex.  How do we do it?  Where did we learn to do it?  How would an alien do it?
+
+For example:  have you ever noticed what your body is doing when you are carrying a full cup of coffee across the room?  Your torso, shoulder, elbow, wrist, and fingers are all working together to maintain cup stability.  Depending on how fast you are going, there are all kinds of subtle corrections being applied to control both the position as well as the velocities/accelerations on the cup, which all affect the level of sloshing.  A little bit of sloshing is okay, as long as there is at least a couple of millimeters of safety margin between the highest slosh and the lip of the cup.  This is an incredible demonstration of intelligent motor control by a biological organism (us!), and I think about these kinds of examples all the time.
+
+I also constantly find myself doing "experiments" in which I change some of the variables and then observe how my brain tries to compensate.  For example, what role does visual feedback play in this motor control problem?  Try closing your eyes and taking a few steps with your full coffee cup.  It's quite a bit harder when you can no longer visually observe the sloshing!
+
+Another experiment:  pick up something to carry in your other hand.  Not so bad, we are generally able to carry two things at once.  But now, tuck a book under the arm that is carrying the coffee cup.  Now, the problem becomes quite a lot harder, because you are essentially losing a couple of degrees of freedom of motor control.  You lose your shoulder and partially your elbow.  It's still possible to carry the cup, because your wrist can do a lot, even on its own!  But it's a much harder task, especially when you try to go fast.
+
+<being a cognitive scientist means having a subject to study all the time!>
+
+<computational perspective.  humans and other animals are an existence proof of what is possible.>
 
 ## What is artificial intelligence? {-}
+
+
 
 There are probably as many definitions of AI as there are AI textbooks.  (Actually there are probably a lot more, if we count definitions in papers, popular science books, essays, etc.)  (The number of definitions of AI is probably exponential in the number of textbooks!)
 

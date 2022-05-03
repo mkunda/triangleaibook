@@ -41,3 +41,14 @@ biological intelligence
 artificial intelligence
 
 information processing systems
+
+a camera as an analogy for translating the world into a knowledge representation.
+
+- takes some aspect of the world (e.g. visual appearance) and puts it into formal symbols (e.g. RGB pixels)
+- agnostic as to what content of the world is captured
+- only captures a very VERY shallow view of the actual thing in the world
+- missing part of analogy: that is the KR piece.  what is the reasoning piece?  reasoning over formal structures.  detecting cats?  (but do not conflate this analogy with the specifics of object recognition!)
+- humans built the camera!  and then humans carry it around and push the button
+- humans looking at a picture of a cat will know that it represents an actual cat, which is a warm, furry, haughty thing that meows and likes to eat fish  show an example of some obscure signal.  what the heck does it mean?
+
+what is the difference between an equation and an algorithm?
