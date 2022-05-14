@@ -36,7 +36,7 @@ options(htmltools.dir.version = FALSE)
 Welcome to the Triangle AI Book!  This book provides a broad introduction to artificial intelligence, dotted with musings on cognitive science, society, technology, and the human condition.
 
 ```{marginfigure}
-If you are primarily interested in data science, neural networks, and statistical machine learning, this book does introduce these topics but probably not in the same way that a more data-science-focused textbook would.  See [Other resources](#sec:resources) in the Introduction for links to AI materials that focus more on these topics.
+If you are primarily interested in the parts of AI that have to do with data science, neural networks, and statistical machine learning, you may get more traction out of more specialized resources like [An Introduction to Statistical Learning](https://www.statlearning.com/) by Gareth James, Daniela Witten, Trevor Hastie, and Rob Tibshirani; or [Deep Learning](https://www.deeplearningbook.org/) by Ian Goodfellow, Yoshua Bengio, and Aaron Courville.  (See [Other Resources](#sec:resources) for more ideas.)
 ```
 
 If you want to learn about the basic science of AI, and how we can use AI to understand and model different kinds of intelligences, then you will likely find something to enjoy in these pages.  
@@ -55,15 +55,15 @@ Pandemic self-haircut.
 
 I am an assistant professor of computer science at Vanderbilt University.  I do research in AI and cognitive science, with a focus on visuospatial reasoning, human learning, and autism and other forms of neurodiversity.  My [research lab](https://my.vanderbilt.edu/aivaslab) is part of the School of Engineering at Vanderbilt University, and we are also affiliated with Vanderbilt's [Frist Center for Autism and Innovation](https://www.vanderbilt.edu/autismandinnovation/).
 
-I belong to a research community within AI called *cognitive systems* (like other communities for computer vision, robotics, natural language processing, etc.).  Researchers in [cognitive systems] (http://www.cogsys.org/) tend to think about intelligence in terms of knowledge representations and reasoning processes---ideas that we will return to later on in this book.
+I belong to a research community within AI called [cognitive systems](https://www.cogsys.org/) (like other communities for computer vision, robotics, natural language processing, etc.).  Cognitive systems researchers tend to think about intelligence in terms of two components: knowledge representations and reasoning processes---an idea that we will return to later in this book.
 
-My trajectory as an AI person began when I was a math major at MIT, where I worked on path planning research with [Nick Roy](https://groups.csail.mit.edu/rrg/index.php?n=Main.HomePage) and also took my first AI courses with [Patrick Winston](https://people.csail.mit.edu/phw/).  I then did a PhD in computer science at Georgia Tech, working on cognitive systems research with [Ashok Goel](http://dilab.gatech.edu/ashok-k-goel/), followed by a postdoc also at Georgia Tech with [Jim Rehg](https://rehg.org/), where I meandered into computer vision and machine learning.  I have been a CS faculty member at Vanderbilt since 2016.
+My trajectory as an AI person began when I was a math major at MIT, where I worked on path planning research with [Nick Roy](https://groups.csail.mit.edu/rrg/index.php?n=Main.HomePage) and also took my first AI courses with [Patrick Winston](https://people.csail.mit.edu/phw/).  I then did a PhD in computer science at Georgia Tech, working on cognitive systems research with [Ashok Goel](https://dilab.gatech.edu/ashok-k-goel/), followed by a postdoc also at Georgia Tech with [Jim Rehg](https://rehg.org/), where I meandered into computer vision and machine learning.  I have been a CS faculty member at Vanderbilt since 2016.
 
 
 
 ## Acknowledgments {-}
 
-This book incorporates perspectives about AI, cognitive science, and other things from many colleagues, including: [Ashok Goel](http://dilab.gatech.edu/ashok-k-goel/), [Keith McGreggor](https://www.ic.gatech.edu/people/keith-mcgreggor), and [Michael Helms](https://www.cc.gatech.edu/~mhelms3/) (cognitive science, cognitive systems, and knowledge-based AI); [Nancy Nersessian](https://www.cc.gatech.edu/aimosaic/faculty/nersessian/) (philosophy of science and cognition & culture); [Eric Schumacher](http://control.gatech.edu/people/eschumacher/) (cognitive neuroscience); [Rob Hampton](https://hamptonlab.wordpress.com/robert-hampton-2/) and [Joe Manns](http://psychology.emory.edu/home/people/faculty/manns-joseph.html) (comparative cognition); [Linda Smith](https://cogdev.sitehost.iu.edu/people.html), [Agata Rozga](http://www.agatarozga.org/), and [Rosa Arriaga](https://sites.google.com/view/riarriaga/home) (developmental psychology); [Jim Rehg](https://rehg.org/), [Fuxin Li](http://web.engr.oregonstate.edu/~lif/), and [David Crandall](https://homes.luddy.indiana.edu/djcran/) (computer vision and machine learning); and [Isabelle Soulières](https://professeurs.uqam.ca/professeur/Soulieres.Isabelle/), [Michelle Dawson](https://autismcrisis.blogspot.com/p/michelle-dawson.html), and [Laurent Mottron](http://www.cenum.umontreal.ca/membres/2_titulaires/en_mottron_l.html) (autism and neurodiversity).
+This book incorporates perspectives about AI, cognitive science, and many other things from numerous colleagues, including: [Ashok Goel](http://dilab.gatech.edu/ashok-k-goel/), [Keith McGreggor](https://www.ic.gatech.edu/people/keith-mcgreggor), and [Michael Helms](https://www.cc.gatech.edu/~mhelms3/) (cognitive science and cognitive systems); [Nancy Nersessian](https://www.cc.gatech.edu/aimosaic/faculty/nersessian/) (philosophy of science and cognition & culture); [Eric Schumacher](https://control.gatech.edu/people/eschumacher/) (cognitive neuroscience); [Rob Hampton](https://hamptonlab.wordpress.com/robert-hampton-2/) and [Joe Manns](http://psychology.emory.edu/home/people/faculty/manns-joseph.html) (comparative cognition); [Linda Smith](https://cogdev.sitehost.iu.edu/people.html), [Agata Rozga](http://www.agatarozga.org/), and [Rosa Arriaga](https://sites.google.com/view/riarriaga/home) (developmental psychology); [Jim Rehg](https://rehg.org/), [Fuxin Li](http://web.engr.oregonstate.edu/~lif/), and [David Crandall](https://homes.luddy.indiana.edu/djcran/) (computer vision and machine learning); [Keivan Stassun](https://astro.phy.vanderbilt.edu/~stassuk/), [Nilanjan Sarkar](https://research.vuse.vanderbilt.edu/rasl/), [Fred Shic](https://www.seattlechildrens.org/research/centers-programs/child-health-behavior-and-development/labs/seattle-childrens-innovative-technologies-lab-scitl), [Brian Scassellati](https://scazlab.yale.edu/), and [Gregory Abowd](https://coe.northeastern.edu/people/abowd-gregory/) (topics at the intersection of technology and autism); and [Isabelle Soulières](https://professeurs.uqam.ca/professeur/Soulieres.Isabelle/), [Michelle Dawson](https://autismcrisis.blogspot.com/p/michelle-dawson.html), and [Laurent Mottron](https://www.cenum.umontreal.ca/membres/2_titulaires/en_mottron_l.html) (cognition, autism, and neurodiversity).
 
 ```{r, fig.margin = TRUE, echo = FALSE, out.width="50%", cache=TRUE}
 knitr::include_graphics('images/phw.jpg')
@@ -72,20 +72,27 @@ knitr::include_graphics('images/phw.jpg')
 [Patrick Henry Winston (1943-2019):](https://www.memoriesofpatrickwinston.com/remembrances) A teacher, mentor, and friend who captured my imagination long ago when he would pace around the front of the classroom and exclaim, "In AI, we are working to unlock the mysteries of the human mind!"
 ```
 
-This book is also inspired by the memory and teachings of [Patrick Winston](https://people.csail.mit.edu/phw/), longtime professor and AI researcher at MIT.  Back in the day, I took his  [6.034](https://ocw.mit.edu/courses/electrical-engineering-and-computer-science/6-034-artificial-intelligence-fall-2010/lecture-videos/) intro AI course as well as his [6xxx](https://courses.csail.mit.edu/6.803/index.html) course on "The Human Intelligence Enterprise."  I also greatly enjoyed his vast store of wisdom about communication, much of which is collected in his final book [*Make It Clear*](https://mitpress.mit.edu/books/make-it-clear).
+This book is also greatly inspired by the memory and teachings of [Patrick Winston](https://people.csail.mit.edu/phw/), longtime AI professor at MIT and one of my most cherished mentors.  Back in the day, I took his [6.034](https://ocw.mit.edu/courses/6-034-artificial-intelligence-fall-2010/) intro AI course and his [6xxx](https://courses.csail.mit.edu/6.803/index.html) course on "The Human Intelligence Enterprise," and I also enjoyed learning from his vast store of wisdom about communication, much of which is collected in his final book [*Make It Clear*](https://mitpress.mit.edu/books/make-it-clear).
 
-(Patrick's writings, like his lectures, are captivating.  Back in the spring of 2019, he sent me a publisher's proof of his latest book, which at the time was titled simply *Communication*.  As I was carrying it from my office to my car, I started idly flipping through the first few pages.  Before I knew it, I had stopped at a random bench and sat there for the next 2.5 hours finishing it!  Highly recommended.)  (Both the book, and reading it outside on a bench!)
+(Back in the spring of 2019, Patrick sent me a publisher's proof of this book, which at the time was titled simply *Communication*.  As I was carrying it from my office to my car, I started idly flipping through the first few pages.  Before I knew it, I found myself sitting on a random bench in the shadow of Vanderbilt's football stadium for the next 2.5 hours to finish reading it!  Patrick's writings, like his lectures, were always captivating.)
+
+```{marginfigure}
+"Skill building and big ideas."  From [Lecture 1](https://ocw.mit.edu/courses/6-034-artificial-intelligence-fall-2010/resources/lecture-1-introduction-and-scope/) in Patrick's 6.034 course.
+```
+
+Patrick often began his courses by talking about how he wanted to give students experience not just in "skill building" but also in the "big ideas" that form the really interesting intellectual foundations of a discipline.  This book aims to do just that.  While many AI books will help you build the same sorts of skills we'll be talking about here (search algorithms, heuristic techniques, and so on), the Triangle AI Book situates these skills in the context of big ideas about artificial intelligence, human intelligence, and our ongoing quest to "unlock the mysteries of the human mind."
+
 
 
 ## Open source contributors {-}
 
 This book is being written as an open-source project.  Improvements and suggestions are welcomed via Github pull request:
 
-[View source](https://github.com/mkunda/triangleaibook).
+[![Github](images/GitHub-Mark-32px.png) View source](https://github.com/mkunda/triangleaibook)
 
 Contributors are expected to abide by the Contributor-Covenant [Code of Conduct](https://www.contributor-covenant.org/version/2/1/code_of_conduct/).
 
-[![Contributor Covenant](https://img.shields.io/badge/Contributor%20Covenant-2.1-4baaaa.svg)](https://github.com/mkunda/triangleaibook/blob/main/CODE_OF_CONDUCT.md)
+[![Contributor Covenant](images/Contributor%20Covenant%202.1.svg)](https://github.com/mkunda/triangleaibook/blob/main/CODE_OF_CONDUCT.md)
 
 ## Authoring tools {-}
 
@@ -94,7 +101,11 @@ I love Tufte-style marginalia!  We will have lots of these throughout this book.
 ```
 
 ```{marginfigure}
-(If you don't know who Edward Tufte is, go locate a physical copy of [*The Visual Display of Quantitative Information*.](https://www.edwardtufte.com/tufte/books_vdqi)  Why a physical copy, you ask?  It is a gorgeous book.  Tufte self-published many of his books to be able to do what he wanted with the design, and it shows.  They really are works of art.)
+If you've never heard of Edward Tufte, he is a pioneer of visual communication and design, especially around the visualization of data.  His books (beginning with his now-classic [*The Visual Display of Quantitative Information*](https://www.edwardtufte.com/tufte/books_vdqi)) are both thought-provoking and gorgeous, and bear his signature look of ultra-spacious margins dotted with [all](https://www.edwardtufte.com/tufte/books_be) [kinds](https://www.edwardtufte.com/tufte/books_ei) of notes, figures, and tangents.  In fact, Tufte chose to self-publish his books so that he could have full control over the design, and it shows.
+```
+
+```{marginfigure}
+I also cannot mention Tufte without repeating one of my favorite quotations of all time, in which he describes Powerpoint data graphics as "poking a finger into the eye of thought."  (From his 2003 diatribe on why [Powerpoint Is Evil](https://www.wired.com/2003/09/ppt2/).)  No, this has nothing to do with the rest of this book, but it's hilarious, and hey, that's what marginalia are for!
 ```
 
 This book was generated using the [bookdown](https://www.bookdown.org) authoring package for R, along with the [msmbstyle](https://github.com/grimbough/msmbstyle) and [tufte](https://github.com/rstudio/tufte) styling packages.  An enthusiastic tip-of-the-hat to Yihui Xie at RStudio for bookdown, tufte, and his [extensive how-to's](https://bookdown.org/yihui/bookdown/).
