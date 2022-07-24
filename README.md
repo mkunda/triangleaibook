@@ -14,4 +14,4 @@ The Triangle AI Book uses the Contributor Covenant [Code of Conduct](https://www
 
 Please cite as:
 
-Kunda, M. (2021). Triangle AI Book.  https://www.triangleaibook.org
+Kunda, M. (2022). Triangle AI Book.  https://www.triangleaibook.org
