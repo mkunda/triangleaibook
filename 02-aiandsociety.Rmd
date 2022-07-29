@@ -1,0 +1,144 @@
+---
+title: "▽△ Triangle AI Book ▽△▽△▽"
+author: "Maithilee Kunda"
+date: "`r Sys.Date()`"
+knit: "bookdown::preview_chapter"
+site: "bookdown::bookdown_site"
+link-citations: no
+apple-touch-icon: "images/apple-touch-icon.png"
+apple-touch-icon-size: 120
+favicon: "images/favicon.ico"
+output:
+  msmbstyle::msmb_html_book:
+    highlight: tango
+    toc: TRUE
+    toc_depth: 1
+    split_by: chapter
+    split_bib: yes
+    margin_references: FALSE
+    css: triangleaibook.css
+    includes:
+      in_header: triangleaibook_header.html
+      after_body: triangleaibook_footer.html
+bibliography: references.bib
+csl: apa-cv-mksort.csl
+---
+
+
+# AI & society {#aiandsociety}
+
+As I sit here drafting this particular section (June 2021), here are three recent headlines that caught my eye:
+
+- "If Facial Recognition Is Not Regulated Now, It Will Never Be Used Responsibly"  [(Washington Post editorial)](https://www.washingtonpost.com/opinions/if-facial-recognition-is-not-regulated-now-it-will-never-be-used-responsibly/2021/06/02/e594d0f4-ba59-11eb-a6b1-81296da0339b_story.html)
+
+- "Runaway Recommendation Engine"  [(Planet Money podcast)](https://www.npr.org/2021/05/26/1000529597/runaway-recommendation-engine)
+
+- "Selfies, Surgeries and Self-Loathing: Inside the Facetune Epidemic"  [(Huffington Post article)](https://www.huffpost.com/entry/facetune-selfies-surgeries-body-dysmorphia_n_60926a11e4b0b9042d989d48)
+
+```{marginfigure}
+<Under construction: Quote from Soul of a New Machine.>
+```
+
+There is a lot of discussion nowadays about the harms caused by AI, which include harms to children; harms to the elderly; harms to politics and governments; harms to minority groups of various racial, ethnic, gender, socioeconomic, religious, or cultural backgrounds; harms to equality and justice; harms to our jobs and economies; harms to humans as well as the non-human species with whom we share our planet; etc.  It's a pretty alarming list.
+
+Of course, we can also talk about how AI can *solve* problems in all of these areas, and there are many kind and intelligent AI experts all over the world working to do just that.
+
+But, I rather suspect that AI is always going to be a very dangerous and bloody double-edged sword.
+
+```{marginfigure}
+<Under construction: Comment on why I deliberately used the word "bloody".>
+```
+
+One way to think about the power of AI is that it can greatly magnify the actions of a single person.  Trying to find a good flight from Accra to Montreal?  One could slowly page through schedules of flights, or use a search algorithm that searches thousands of possible flight combinations every second.  Trying to create a CGI orc for the Hobbit movies?  One could manually design and animate an individual orc, or use simulation algorithms to generate an orc army.
+
+In such fashion, AI can magnify human actions taken for good, like improving cancer treatments or monitoring earthquakes, but it can also magnify human actions taken out of ignorance, greed, or evil.  Hence: double-edged sword.
+
+Or, perhaps a better analogy is the old classic of Pandora's box.  As with nuclear weapons (one of the other Pandora's boxes of our modern era), I don't think there is any way to put AI back in the box.  Its tendrils are continuing to spread into all aspects of our lives, for better and for worse.
+
+
+```{marginfigure}
+Except: this book will cover one particular slice of the pie, as described below in [This is your brain on AI](#sec:yourbrainonai).
+```
+
+There is far too much going on in terms of AI and society to cover within the pages of this book, and so I'm not even going to try to provide any kind of comprehensive treatment of these topics.  But, no AI education today is complete without thinking and learning about these issues.  Just as doctors and lawyers are expected to learn about, follow, and stay up-to-date on professional ethics and emerging societal issues related to their work, so too do we, as AI people, need to stay abreast of what is going on in the wider world related to AI.
+
+If you are not getting this kind of material in your classes (or even if you are), there are many good books, documentaries, and even sci-fi and other fictional stories, novels, and TV shows that explore many of the really thorny questions.
+
+One concrete suggestion:  Search online for "AI ethics course reading list," and you can find many university-based websites where professors have posted reading lists for their AI & ethics courses.  These are excellent resources.  
+
+Here is a pseudo-random sampling:
+
+- Harvard reading list on [Ethics and Governance of AI](https://cyber.harvard.edu/ethics-and-governance-ai-reading-list), by the Berkman Klein Center for Internet and Society.
+
+- Hong Kong University of Science and Technology seminar on [Introduction to Ethical & Fairness Issues in AI](https://www.cse.ust.hk/~golin/Talks/Ethics_in_AI_Reading_List.html).
+
+- Stanford course on [CS122: Artificial Intelligence - Philosophy, Ethics, and Impact](https://web.stanford.edu/class/cs122/).
+
+- Vanderbilt course on [The Ethics of Artificial Intelligence](https://my.vanderbilt.edu/aiethics/schedule/).
+
+
+
+## Case study: Website analytics and data privacy {#sec:websiteanalytics -}
+
+Here is a micro-case-study of AI and how it is shaping society.
+
+When building this website, I faced the choice of how to obtain some website analytics.  I wanted basic information about you, the reader:  how many visits, from which countries, etc.
+
+```{marginfigure}
+This strange exchange became especially clear to me when I read the apt title of this blog post: <a href="https://iainbean.com/posts/2020/google-analytics-a-luxury-your-users-are-paying-for/">Google Analytics: A luxury your users are paying for</a>.
+```
+
+There are many free options, like the widely-used Google Analytics.  However, like the old meme: if you are not paying for it, then you might be the product...except, in this case, *I* am not the product (though I am the one receiving the benefits); *you* (the reader) would be the product!
+
+After pondering this option, I decided that I do not want to barter your personal data in exchange for website analytics data.  The Triangle AI Book instead uses a paid service (that I pay for, with money!) from <a href="https://plausible.io">Plausible.io</a>, an open-source analytics product that does not use cookies or collect any personal data from users.  There are a growing number of similar options for <a href="https://privacyfocusedanalytics.info/">privacy-focused analytics</a> to choose from.
+
+More generally, while consumer data has always carried value, there is no question that AI has monumentally accelerated the scale and usefulness of such data for companies.  Which, like many aspects of AI (as described [above](#sec:aiandsociety)) ends up being both "for better and for worse" for consumers.
+
+Issues of data privacy are worth entire books and courses by themselves, but even if you cannot do such a deep dive, students of AI should have at least a passing familiarity with the core debates.  Here are a few pointers into these discussions:
+
+- An interview with tech columnist Geoffrey Fowler about <a href="https://www.npr.org/2019/07/31/746878763/how-tech-companies-track-your-every-move-and-put-your-data-up-for-sale">How Tech Companies Track Your Every Move And Put Your Data Up For Sale</a>.
+
+- An interview with professor Shoshona Zuboff, who coined the term "surveillance capitalism," about <a href="https://www.wbur.org/onpoint/2019/01/15/surveillance-capitalism-shoshana-zuboff-facebook-data">How Tracking And Selling Our Data Became A Business Model</a>.
+
+- Data privacy laws have started to come into play around the world, such as the European Union's <a href="https://gdpr.eu/what-is-gdpr/">General Data Protection Regulation (GDPR)</a>, and the state of California's <a href="https://oag.ca.gov/privacy/ccpa">California Consumer Privacy Act (CCPA)</a>.
+
+
+
+## No more simple happy nerds {-}
+
+Like the nuclear scientists (probably like scientists of many stripes over the millennia), I really don't know what to do sometimes.  As an AI scientist, do I keep researching and teaching about AI things, even though they are actively, right now, today being misused?  Do I just stop?  Do I quit my job as a professor and become an investigative journalist, or a political activist?
+
+```{marginfigure}
+@su2021affective
+```
+
+There was a 2021 paper at CVPR, one of the premier computer vision conferences, that looked at how people in machine learning and computer vision (two big subfields of AI) feel about how these areas have been changing in recent years.  One quote in particular stuck out to me:
+
+> As computer vision’s reach in our everyday lives expands, stories spoke of a growing realization among researchers that they could no longer be a "simple happy nerd pushing boundaries on the next cool computer vision technology," or "pretend to be an ostrich researcher hiding my head in the sand and blame others for the misuse of technology."
+
+I think that we all have to choose what to do with our AI knowledge, and it has to be an active choice.  Gone are the days when we might have been "simple happy nerds," working on AI things that were theoretically interesting but might have had little impact on other people.
+
+And, let me exhort each and every one of you who reads these words:  **As a computer science person learning about AI, you are going to know far more about how AI things work than the vast majority of other people on the planet.**  And, recalling the famous directive given to Spiderman by Uncle Ben, "With great power comes great responsibility."
+
+*You* are the people we need to keep things from going completely off the rails, and to help guide our species' uses of AI more towards the good and away from the bad.  *You* are the people we need to help educate the rest of the public, to do investigations to find out how AI is being used, to be the brakes when others around you suggest bad ideas, to be the whistleblowers when you see others acting on their bad ideas, to come up with new laws to help protect people, and to start nonprofit foundations in the public interest.  
+
+It can also be as simple as telling your friends and family members about how their online shopping data is getting used, and why they need to be careful about reading certain kinds of social media content.  Or it can be as involved as pursuing a PhD in order to become a world expert on how AI can affect elections, or whatever the issue is that captures your intellectual and emotional interests.
+
+And, no matter what path you take, I think we also all have a responsibility, as computer scientists and AI people, to stay informed about what is going on with AI in the broader world.  **The AI techniques we have at our fingertips are changing lightning-fast, and the resulting issues facing humanity are changing even faster.**  We need sharp students like yourself to stay abreast of both of these waves, to help our species navigate these uncharted waters.
+
+Stay informed, and be brave.
+
+
+
+
+
+## In this book: This is your brain on AI {#sec:yourbrainonai -}
+
+I was re-reading *Dune* recently and was very much struck by this passage:
+
+> “Once men turned their thinking over to machines in the hope that this would set them free. But that only permitted other men with machines to enslave them.”
+
+<Under construction.>
+
+
+

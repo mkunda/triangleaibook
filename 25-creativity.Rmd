@@ -1,0 +1,35 @@
+---
+title: "▽△ Triangle AI Book ▽△▽△▽"
+author: "Maithilee Kunda"
+date: "`r Sys.Date()`"
+knit: "bookdown::preview_chapter"
+site: "bookdown::bookdown_site"
+link-citations: no
+apple-touch-icon: "images/apple-touch-icon.png"
+apple-touch-icon-size: 120
+favicon: "images/favicon.ico"
+output:
+  msmbstyle::msmb_html_book:
+    highlight: tango
+    toc: TRUE
+    toc_depth: 1
+    split_by: chapter
+    split_bib: yes
+    margin_references: FALSE
+    css: triangleaibook.css
+    includes:
+      in_header: triangleaibook_header.html
+      after_body: triangleaibook_footer.html
+bibliography: references.bib
+csl: apa-cv-mksort.csl
+---
+
+# Creativity {#creativity}
+
+<Under construction. Add chapter intro.>
+
+## Cognitive experiment: 
+
+## Types of creativity
+
+Boden paper.

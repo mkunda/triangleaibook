@@ -101,11 +101,11 @@ ul.navbar {
 }
 
 
-/***************************/
-/* questions and solutions */
+/****************************/
+/* specialized environments */
 
 .proposition, .question-begin, .question-end, .exercise, .question-body {
-  color: #6e84ce;
+  color: #ae9326;
 }
 
 .solution, .solution-begin, .solution-end, .solution-body {
@@ -125,3 +125,16 @@ ul.navbar {
 
 /* nice ruby color: #ae2661 */
 
+
+/***************************/
+/* definitions */
+
+.definition {
+  color: #6e84ce;
+  font-style: italic;
+}
+
+.customdefinition {
+  color: #6e84ce;
+  font-style: italic;
+}
